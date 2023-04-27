@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <title>Porto Folio</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-      <!----Move to up bottom---->
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="container">
+       
   <div class="scroll-button">
     <a href="#home"><i class="fas fa-arrow-up"></i></a>
   </div>  
@@ -26,7 +12,7 @@
         <div class="container-fluid">
           <a href="#" class="logo">Porto <span>Folio</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-           <!---<span class="navbar-toggler-icon"></span>-->
+        <span class="navbar-toggler-icon"></span>
             <i class="navbar-toggler-icon bi-menu-down"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -56,36 +42,30 @@
   </div>
 </nav>
 
-
-
-<!-----Home------>
-
-<Section class="home" id="home">
+<div className="home" id="home">
   <div class="container">
     <div class="row">
       <div class="col-lg-7 order-lg-1 order-2 banner-content">
         <h3>Hello, I'm</h3>
         <h1 class="display-1">Yuva Krishnan</h1>
         <h4>Frontend Developer</h4>
-      </div><br><br>
+      </div><br/><br/>
       <div class="col-lg-5 order-lg-2 order-1">
         <div class="top-right-img">
-        <img src="./images/img.png" class="img-fluid">
+        <img src="./images/img.png" class="img-fluid"/>
       </div>
     </div>
   </div>
   </div>    
-</Section>
+</div>
 
-
-<!-----About----->
-<section class="about" id="about">
+<div class="about" id="about">
  <div class="container-fluid">
   <div class="content">
     <div class="title"><span>About Me</span></div>
     <div class="about-details">
       <div class="left">
-        <img src="./images/about.jpeg" class="img-fluid">
+        <img src="./images/about.jpeg" class="img-fluid"/>
       </div>
       <div class="right">
         <div class="topic">Designing Is My Passion</div>
@@ -94,18 +74,15 @@
     </div>
   </div>
 </div>
-</section>
+</div>
 
-
-  <!---Skill----->
-
-    <section class="skills" id="skills">
+<section class="skills" id="skills">
       <div class="content">
         <div class="title"><span>My Skills</span></div>
         <div>
             <div class="skills-container">
               <div class="skills-img">
-                <img src="./images/skills.png" alt="">
+                <img src="./images/skills.png" alt=""/>
             </div>
                 <div class="bars">
                     <div class="bars-box">
@@ -122,7 +99,7 @@
                     </div>
                     <div class="bars-box">
                         <h3>JAVASCRIPT</h3>
-                        <Span>40%</Span>
+                        <span>40%</span>
                         <div class="light-bar"></div>
                         <div class="percent-bar js-bar"></div>
                     </div> 
@@ -132,15 +109,14 @@
     </div>
     </section>
 
-    <!------Projects-------->
 
-    <section class="projects" id="projects">
+    <section class="projects" id="projects"/>
       <div class="contact">
           <div class="title"><span>Projects</span></div>
   </div>
   <div class="project-card">
     <div class="card">
-      <img src="./images/ss.PNG" alt="">
+      <img src="./images/ss.PNG" alt=""/>
       <div class="info">
         <h1>Calculater</h1>
         <a href="https://sampalraj.github.io/calculater/" target="blank" class="btn">view Site</a>
@@ -148,7 +124,7 @@
     </div>
 
     <div class="card">
-      <img src="./images/ss1.PNG" alt="">
+      <img src="./images/ss1.PNG" alt=""/>
       <div class="info">
         <h1>Homepage </h1>
         <a href="https://sampalraj.github.io/News-homepage/" target="blank" class="btn">view Site</a>
@@ -156,14 +132,14 @@
     </div>
 
     <div class="card">
-      <img src="./images/ss2.PNG" alt="">
+      <img src="./images/ss2.PNG" alt=""/>
       <div class="info">
         <h1>Portofolio</h1>
         <a href="https://sampalraj.github.io/portofilio-testpage/" target="blank" class="btn">view Site</a>
       </div>
     </div>
     <div class="card">
-      <img src="./images/ss3.PNG" alt="">
+      <img src="./images/ss3.PNG" alt=""/>
       <div class="info">
         <h1>Card details </h1>
         <a href="https://sampalraj.github.io/Interactive-card-details/" target="blank" class="btn">view Site</a>
@@ -171,7 +147,7 @@
     </div>
 
     <div class="card">
-      <img src="./images/ss4.png" alt="">
+      <img src="./images/ss4.png" alt=""/>
       <div class="info">
         <h1>Product card</h1>
         <a href="https://sampalraj.github.io/Product-preview-card-component/" target="blank" class="btn">view Site</a>
@@ -179,25 +155,22 @@
     </div>
 
     <div class="card">
-      <img src="./images/png.gif" alt="">
+      <img src="./images/png.gif" alt=""/>
       <div class="info">
         <h1>view more site</h1>
         <a href="https://github.com/YK2852/Portfolio-Website-.git" target="blank" class="btn">view Site</a>
       </div>
     </div>
   </div>
-  <!---- Contact------>
 
-
-
-<section class="contact" id="contact">
+  <div class="contact" id="contact">
   <div class="contact- container">
     <div class="row">
       <div class="col-md-6">
         <div class="title"><span>Contact Us</span></div>
         <div class="text">
-          <div class="topic">Have Any Projects?</div>
-          <p>If you have any questions or comments about our project or content, please don't hesitate to reach out to us. You can contact us through the following methods: <br><br>Or you can fill out the contact form below</p>
+          <div className="topic">Have Any Projects?</div>
+          
           <a href="https://formsubmit.co/el/rubuse" class="btn btn-primary">Send message</a>
         </div>        
       </div>
@@ -209,15 +182,22 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <div class="copyright">
   &#169; Portofolio | All  Right Resserved
 </div>
 
+
+
+
+
+
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-</body>
-  </body>
-</html>
+    </div>
+  );
+}
+
+export default App;
